@@ -290,4 +290,29 @@ public abstract class AbstractElementPanel implements IElement, IProbeInfo {
     public IIconStyle defaultIconStyle() {
         return new IconStyle();
     }
+    
+	@Override
+	public IProbeInfo createVerticalPanel() {
+		return new ElementVertical(new LayoutStyle().spacing(ElementVertical.SPACING).alignment(ElementAlignment.ALIGN_TOPLEFT));
+	}
+
+	@Override
+	public IProbeInfo createVerticalPanel(ILayoutStyle style) {
+		return new ElementVertical(style);
+	}
+
+	@Override
+	public IProbeInfo createHorizontalPanel() {
+		return new ElementHorizontal(new LayoutStyle().spacing(layout.getSpacing()).alignment(ElementAlignment.ALIGN_TOPLEFT));
+	}
+
+	@Override
+	public IProbeInfo createHorizontalPanel(ILayoutStyle style) {
+		return new ElementHorizontal(style);
+	}
+	
+	@Override
+	public IElement asElement() {
+		return this;
+	}
 }

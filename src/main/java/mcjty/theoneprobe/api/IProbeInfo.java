@@ -60,6 +60,24 @@ public interface IProbeInfo {
      * Create a default style for the icon element
      */
     IIconStyle defaultIconStyle();
+    
+    /**
+     * Creates a Vertical Panel without adding it to elements.
+     */
+    IProbeInfo createVerticalPanel();
+    IProbeInfo createVerticalPanel(ILayoutStyle style);
+    
+    /**
+     * Creates a Horizontal Panel without adding it to elements.
+     */
+    IProbeInfo createHorizontalPanel();
+    IProbeInfo createHorizontalPanel(ILayoutStyle style);
+    
+    /**
+     * Converts the ProbeInfo into the element. Reduces casting.
+     */
+    IElement asElement();
+    
 
     /**
      * Create an icon. If u and v are -1 then the default texture atlas is used
