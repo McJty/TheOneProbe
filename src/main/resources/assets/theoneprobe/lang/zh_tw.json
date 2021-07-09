@@ -1,0 +1,14 @@
+{
+    "key.toggleLiquids": "切換：顯示液體資訊",
+    "key.toggleVisible": "切換：顯示資訊介面",
+    "key.categories.theoneprobe": "The One Probe",
+    "item.theoneprobe.probe": "The One Probe",
+    "item.theoneprobe.probe_goggles": "The One Probe (Bauble)",
+    "item.theoneprobe.diamond_helmet_probe": "附探針的鑽石頭盔",
+    "item.theoneprobe.gold_helmet_probe": "附探針的黃金頭盔",
+    "item.theoneprobe.iron_helmet_probe": "附探針的鐵製頭盔",
+    "item.theoneprobe.creativeprobe": "創造模式探針",
+    "item.theoneprobe.probenote": "The One Probe 說明書",
+
+    "itemGroup.Probe": "The One Probe"
+}
